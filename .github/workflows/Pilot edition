@@ -1,36 +1,213 @@
-# This is a basic workflow to help you get started with Actions
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megalinks Consolidated Investment Ltd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #0056a8;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeInDown 2s;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056a8;
+        }
+        section {
+            padding: 2rem;
+            opacity: 0;
+            animation: fadeInUp 2s forwards;
+        }
+        .section-title {
+            color: #0056a8;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f4f4f4;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            background: #0056a8;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #004080;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Megalinks Consolidated Investment Ltd</h1>
+        <p>Building Wealth, Unlocking Potential in Real Estate Networking</p>
+    </header>
 
-name: CI
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#projects">Projects</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>MEGALINKS is a revolutionary real estate marketing networking company poised to transform property investment. In today’s fast-paced world, building wealth and achieving financial freedom require innovative thinking and strategic partnerships. That's why we created MEGALINKS: to enable individuals and groups to thrive in the real estate industry.</p>
+        <p>Our mission is to empower individuals and groups by creating opportunities for financial freedom and wealth creation in the real estate industry.</p>
+    </section>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <section id="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <ul>
+            <li>Register with <strong>&#8358;30,000</strong> to become a Megalinks Partner (MLP).</li>
+            <li>Earn 15% direct commission on sales you make for the company.</li>
+            <li>Earn 5% indirect commission from your downlines' sales.</li>
+            <li>Earn 2% tier commission when you become a Manager.</li>
+        </ul>
+        <p>Progression Levels:</p>
+        <ul>
+            <li><strong>Supervisor:</strong> Recruit 5 MLPs and earn &#8358;50,000.</li>
+            <li><strong>Assistant Manager:</strong> Manage 5 Supervisors and earn &#8358;150,000.</li>
+            <li><strong>Manager:</strong> Lead 5 Assistant Managers and earn &#8358;500,000 + additional commissions.</li>
+        </ul>
+    </section>
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p>Explore our luxurious real estate developments:</p>
+        <ul>
+            <li><strong>Crown Luxury City Asaba:</strong> Gateway to luxurious living and unparalleled serenity.</li>
+            <li><strong>Crown Paradise Asaba:</strong> A premier destination for comfort and elegance.</li>
+        </ul>
+    </section>
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+    <section id="opportunities">
+        <h2 class="section-title">Opportunities</h2>
+        <p>Join our network and unlock your potential through:</p>
+        <ul>
+            <li>Financial freedom and wealth creation.</li>
+            <li>Comprehensive training programs.</li>
+            <li>A supportive entrepreneurial community.</li>
+        </ul>
+    </section>
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>We’d love to hear from you! Reach out to us:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: consolidatedmegalinks@gmail.com info@megalinks.com</p>
+        <p>Phone: +234-8028888298</p>
+        <p>Office Address: Shop C7 informani market behind Arts and culture area 10 Garki Abuja.</p>
+    </section>
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    <footer>
+        <p>&copy; 2024 Megalinks Consolidated Investment Ltd. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add motion effect to sections
+            const sections = document.querySelectorAll('section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Handle contact form submission
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                fetch('/contact', {
+                    method: 'POST',
+                    body: formData,
+                }).then(response => response.json())
+                  .then(data => alert('Message sent successfully!'))
+                  .catch(error => alert('Error sending message.'));
+            });
+        });
+    </script>
+</body>
+</html>
